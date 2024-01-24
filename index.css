@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    height: 100vh;
+    color: #1D1B29;
+    margin: 0;
+    background-color: #F5F5F5;
+}
+p,a{
+    font-size: 11px;
+    margin-top: 9em;
+    text-decoration: none;
+}
+p{
+    color: #7f7f7f!important;
+}
+a {
+    color: #1D1B29;
+}
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.przelicz {
+    background-color: #1D1B29;
+    color: #fff;
+}
+form input, form select {
+    flex: 1 1 auto;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #1D1B29;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+#result,#info {
+    margin-top: 3rem;
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+}
+#exchangeRateInfo{
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #7f7f7f;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Media query dla mniejszych ekranów */
+@media (max-width: 600px) {
+    form input, form select, form button {
+        flex-basis: 100%;
+    }
+}
